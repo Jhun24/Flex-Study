@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between</title>
+    <style>
+        *{
+            margin:0;
+        }
+
+        body{
+            width:100vw;
+            height:100vh;
+
+            background-color:rgb(225,225,225);
+        }
+
+        body > .header{
+            width:100vw;
+            height:4em;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: #fff;
+        }
+
+        body > .header > h2{
+            margin-left:20px;
+            font-size:2em;
+        }
+
+        body > .header > .header-btn-box{
+            width:350px;
+            height:40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-right:20px;
+        }
+
+        body > .header > .header-btn-box > div{
+            width:150px;
+            height:40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            background-color: #2351A0;
+            color:#fff;
+            border-radius: 5px;
+            
+            font-size:16px;
+            font-weight:600;
+
+            cursor:pointer; /* 포인터 커서로 바꾸기*/
+            user-select: none; /* 드래그 안되게 */
+        }
+
+        body > .header > .header-btn-box > div:hover{
+            background-color: #fff;
+            border:1.5px solid #2351A0;
+            color:#2351A0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Logo</h2>
+
+        <div class="header-btn-box">
+            <div class="login-btn">로그인</div>
+            <div class="register-btn">회원가입</div>
+        </div>
+    </div>
+
+</body>
+</html>
